@@ -168,6 +168,8 @@
         </div>
         {{-- if coupon exists --}}
         @if (!empty($coupon))
+            <h5 class="text-success">Congratulation! You got {{ $coupon->value }} discount</h5>
+            <span class="text-muted">You can use this coupon code next time</span>
             <div class="coupon float-left">
                 <p>
                     <strong>Coupon Code: </strong>
