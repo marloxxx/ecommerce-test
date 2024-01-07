@@ -179,6 +179,10 @@
                     <strong>Discount: </strong>
                     {{ $coupon->value }}
                 </p>
+                <p>
+                    <strong>Expire Date: </strong>
+                    {{ \Carbon\Carbon::parse($coupon->expiry_date)->format('d-m-Y') }}
+                </p>
             </div>
         @endif
         <div class="clearfix"></div>
