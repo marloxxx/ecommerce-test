@@ -129,7 +129,7 @@ class OrderController extends Controller
             $orderProduct->save();
         }
 
-        // $carts = Cart::where('user_id', auth()->id())->delete();
+        $carts = Cart::where('user_id', auth()->id())->delete();
 
         // check if coupon applied
         if (session()->has('coupon')) {
